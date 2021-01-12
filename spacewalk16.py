@@ -1,16 +1,17 @@
 #!/usr/bin/python
 
 ''' EXTRACTING COUNTRIES & RELATIONSHIPS
-In the previous exercise, you wrote a script using spaCy’s 
-PhraseMatcher to find country names in text. Let’s use that 
-country matcher on a longer text, analyze the syntax and 
+In the previous exercise, you wrote a script using spaCy’s
+PhraseMatcher to find country names in text. Let’s use that
+country matcher on a longer text, analyze the syntax and
 update the document’s entities with the matched countries.
 
 '''
-#Iterate over the matches and create a Span with the label "GPE" (geopolitical entity).
-#Overwrite the entities in doc.ents and add the matched span.
-#Get the matched span’s root head token.
-#Print the text of the head token and the span.
+# Iterate over the matches
+# and create a Span with the label "GPE" (geopolitical entity).
+# Overwrite the entities in doc.ents and add the matched span.
+# Get the matched span’s root head token.
+# Print the text of the head token and the span.
 
 import spacy
 from spacy.matcher import PhraseMatcher
